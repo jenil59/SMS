@@ -38,9 +38,7 @@
                                         <img src="./components/assets/images/user/uimg.png" alt="" srcset="">
                                     </div>
                                     <p>
-                                    <span class="material-icons-round">
-expand_more
-</span>
+                                    <span class="material-icons-round">expand_more</span>
                                     </p>
                                 </div>
                                 <div class="second">

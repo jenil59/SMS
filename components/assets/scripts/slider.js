@@ -1,9 +1,9 @@
 let span = document.querySelectorAll('.card-btn span');
 let product = document.getElementsByClassName('product')
-let product_page = Math.ceil(product.length / 4);
+let product_page = Math.ceil(product.length / 6);
 let l = 0;
-let moveper = 25.34;
-let maxmove = 203;
+let moveper = 15.30;
+let maxmove = 91.8;
 
 //for mobile
 

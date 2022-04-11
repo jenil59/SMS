@@ -1,0 +1,132 @@
+#main_category {
+    a {
+        text-decoration: none;
+    }
+    display: flex;
+    flex-direction: column;
+    .title {
+        font-size: 25px;
+        padding: 10px 10px;
+        padding-left: 17px;
+        color: #8f8f8f;
+    }
+    .containt {
+        margin-top: 30px;
+        display: flex;
+        #side_bar {
+            top: 100px;
+            height: 100vh;
+            width: 330px;
+            .side_menu {
+                margin: 15px 15px;
+            }
+            .filter_head {
+                width: 280px;
+                background-color: #fff;
+                font-size: 15px;
+                margin-top: 10px;
+                padding-bottom: 8px;
+                padding-left: 15px;
+                border-bottom: 2px solid rgb(216, 215, 215);
+            }
+            .filer {
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+            .filter1 {
+                display: flex;
+                justify-content: space-between;
+                background-color: #fff;
+                width: 280px;
+                font-size: 15px;
+                font-weight: 200;
+                padding-top: 10px;
+                padding-bottom: 8px;
+                cursor: pointer;
+                padding-left: 15px;
+                border-bottom: 2px solid rgb(216, 215, 215);
+                transition-delay: 70ms;
+            }
+            .filter1 i {
+                margin-right: 9px;
+            }
+            .filter1 {
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.164);
+                    font-weight: 600;
+                }
+            }
+        }
+        .product_list {
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 100%;
+            // background-color: rgb(152, 160, 160);
+            .card {
+                height: 340px;
+                margin: 0px 10px;
+                padding: 10px;
+                margin-top: 8px;
+                text-align: center;
+                border-radius: 5px;
+                background-color: white;
+                box-shadow: 0 5px 10px #eee;
+                border: 1px solid #eee;
+                position: relative;
+                .img_book {
+                    img {
+                        max-width: 88%;
+                        height: 170px;
+                    }
+                }
+                .data_book {
+                    .book_title {
+                        display: block;
+                        max-height: 43px;
+                        overflow: hidden;
+                        font-size: 13px;
+                        color: black;
+                        &:hover {
+                            color: #eeb10b;
+                        }
+                    }
+                    .book_auname,
+                    .book_publication {
+                        color: #676767;
+                        height: 22px;
+                        line-height: 22px;
+                        overflow: hidden;
+                        font-size: 13px;
+                    }
+                    .offer_lab {
+                        margin-top: 10px;
+                        .offer_text {
+                            color: green;
+                        }
+                    }
+                    .prizebox {
+                        display: flex;
+                        padding: 20px;
+                        position: absolute;
+                        height: 30px;
+                        justify-content: center;
+                        align-items: center;
+                        bottom: px;
+                        .orignal {
+                            width: 100px;
+                            font-size: 25px;
+                            color: #B12704;
+                        }
+                        .mrp {
+                            padding-top: 10px;
+                            text-decoration: line-through;
+                            color: #363636;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

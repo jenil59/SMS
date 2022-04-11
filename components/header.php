@@ -1,10 +1,14 @@
+<?php
+    
+ ?>
+
 <header>
                 <div class="logo-bar">
                     <div class="logo">
                         <img src="./components/assets/images/img/logo-2.png" height="50px" width="250px" alt="">
                     </div>
                     <div class="search-box">
-                        <form action="">
+                        <form action="./category.php" method="get">
                             <input type="text" name="search-query" id="" placeholder="Search" class="search-input">
                             <input type="submit" class="btn btn-search" value="Search">
                         </form>
@@ -26,12 +30,18 @@
 
                             </div>
                             <div id="user-box">
-                                <div class="icon-box">
-                                    <i class="fas fa-user"></i>
+                                <div class="first">
+                                    <div class="icon-box">
+                                        <img src="./components/assets/images/user/uimg.png" alt="" srcset="">
+                                    </div>
+                                    <p>
+                                    <span class="material-icons-round">expand_more</span>
+                                    </p>
                                 </div>
-                                <p>
-                                    <small>hello, user</small><br> account
-                                </p>
+                                <div class="second">
+                                    <div class="item"><b>Hello , user </b><a href="./user">login</a></div>
+                                    
+                                </div>
                             </div>
 
                         </div>
@@ -41,9 +51,9 @@
                 <div class="nav-bar">
 
                     <div class="nav-list">
-                        <div href="" class="nav-item">Home</div>
+                        <a href="./" class="nav-item">Home</a>
 
-                        <div href="" class="nav-item">Shop
+                        <div  class="nav-item">Shop
 
                             <div class="dropdown dropdown-mega">
                                 <div class="wrapper">
@@ -131,10 +141,11 @@
 
 
                         </div>
-                        <div href="" class="nav-item">Books</div>
-                        <div href="" class="nav-item">Materials</div>
-                        <div href="" class="nav-item">Intruments</div>
-                        <div href="" class="nav-item">Customer care
+                        <a href="./category.php" class="nav-item">Books</a>
+                        <a href="./category.php" class="nav-item">Materials</a>
+                       
+                        <a href="./category.php" class="nav-item">Intruments</a>
+                        <div href=" " class="nav-item">Customer care
 
                             <div class="dropdown dropdown-single">
 
@@ -155,9 +166,6 @@
                             </div>
 
                         </div>
-                        <a href="./login.html" class="nav-item">login</a>
-
-                    </div>
 
                 </div>
                 <div class="back_blend"></div>
