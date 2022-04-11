@@ -1,0 +1,122 @@
+#res_right {
+  width: 100%;
+}
+
+#res_right input[type=text],
+#res_right input[type=email],
+#res_right input[type=number],
+#res_right input[type=password],
+#res_right input[type=tel] {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #a2cbe5;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+#res_right input[type=text]:focus,
+#res_right input[type=email]:focus,
+#res_right input[type=number]:focus,
+#res_right input[type=password]:focus,
+#res_right input[type=tel]:focus {
+  outline: none;
+  border-color: #1677e6;
+  -webkit-box-shadow: 0 0 8px #66e9a8;
+          box-shadow: 0 0 8px #66e9a8;
+}
+
+#res_right input[type=radio] {
+  width: 10%;
+  padding-left: 0%;
+  border: 1px solid #a8a6a6;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+#res_right h1 {
+  font-family: Arial;
+  font-size: x-large;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}
+
+#res_right label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+#res_right input[type=submit] {
+  background-color: #101863;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+#res_right input[type=submit]:hover {
+  background-color: #1677e6;
+}
+
+#res_right .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  margin: 30px;
+  margin: auto;
+}
+
+#res_right .col-10 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+}
+
+#res_right .col-90 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+#res_right .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#res_right .row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#res_right .ret_page {
+  padding: 5px;
+  position: absolute;
+  bottom: 18px;
+  border: 1px solid #eef;
+  background: #eee;
+  left: 64%;
+}
+
+@media screen and (max-width: 600px) {
+  #res_right .col-10,
+  #res_right .col-90,
+  #res_right input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+#res_right .ctrl {
+  margin: 20px;
+}
+/*# sourceMappingURL=registration.css.map */

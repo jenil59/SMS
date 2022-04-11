@@ -1,0 +1,189 @@
+.collection-box {
+  width: 100%;
+  margin: 10px auto;
+  position: relative;
+  padding: 5px;
+}
+
+.collection-box .collection-heading {
+  width: 98%;
+  height: 60px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.collection-box .collection-heading p span {
+  font-size: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #555;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 3px;
+  background: #eee;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.collection-box .collection-heading p span:hover {
+  color: white;
+  background: #222;
+}
+
+.collection-box .da {
+  width: 98%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+}
+
+.collection-box .da::-webkit-scrollbar {
+  display: none;
+}
+
+.collection-box .da .product {
+  min-width: 15%;
+  height: 300px;
+  border: 2px solid #eef;
+  margin: 10px 5px 0 0;
+  border-radius: 5px;
+  position: relative;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.collection-box .da .product picture {
+  width: 100%;
+  height: 51%;
+  padding: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.collection-box .da .product picture img {
+  width: 75%;
+  margin: 0px auto;
+  height: 130px;
+}
+
+.collection-box .da .product .details {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: #444;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.collection-box .da .product .details p a {
+  text-decoration: none;
+  color: black;
+}
+
+.collection-box .da .product .details p a:hover {
+  color: #eeb10b;
+}
+
+.collection-box .da .product .details p small {
+  margin-top: 10px;
+}
+
+.collection-box .da .product .details .prizebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  position: absolute;
+  height: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 5px;
+}
+
+.collection-box .da .product .details .prizebox .orignal {
+  width: 100px;
+  font-size: 25px;
+  color: #B12704;
+}
+
+.collection-box .da .product .details .prizebox .mrp {
+  padding-top: 10px;
+  text-decoration: line-through;
+  color: #363636;
+}
+
+.collection-box .da small {
+  color: #555;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.collection-box .da a.btn-a {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 6px 6px;
+  font-size: 12px;
+  margin: 5px 0 0 0px;
+  display: inline-block;
+  background: #07122f;
+  color: white;
+}
+
+.collection-box .da .star {
+  margin: 5px auto;
+  width: 51%;
+  font-size: 17px;
+  color: #808080;
+}
+
+.collection-box .da .btn {
+  width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=slider.css.map */

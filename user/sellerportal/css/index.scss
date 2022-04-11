@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+header {
+    .nav {
+        display: flex;
+        align-items: center;
+        background: #07122f;
+    }
+    .heading {
+        font-size: 30px;
+        margin: 10px;
+        margin-left: 40px;
+        width: 17%;
+        letter-spacing: 1px;
+        a {
+            color: #fff;
+        }
+    }
+    .nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    .nav li a {
+        text-decoration: none;
+        color: white;
+    }
+    .nav li {
+        font-size: 18px;
+        letter-spacing: 1px;
+        list-style: none;
+        margin-right: 50px;
+    }
+    .exit {
+        position: absolute;
+        right: 20px;
+        a {
+            color: #808080;
+            border-color: #808080;
+            font-weight: 200;
+            &:hover {
+                color: #fff;
+                border-color: #fff;
+            }
+        }
+    }
+}
+
+.container {
+    padding: 10px;
+    width: 100%;
+    .card_container {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 20px;
+        .card {
+            border-radius: 10px;
+            height: 200px;
+            width: 25%;
+            border: 1px solid #bfbfbf;
+            cursor: pointer;
+            &:hover {
+                box-shadow: 0.5px 0.5px 10px 1px rgb(204, 204, 204);
+            }
+        }
+        .text {
+            font-size: 30px;
+            margin: 20px
+        }
+        .number {
+            box-sizing: border-box;
+            font-size: 100px;
+            text-align: center;
+        }
+        .status {
+            box-sizing: border-box;
+            font-size: 50px;
+            margin-top: 35px;
+            text-align: center;
+        }
+    }
+    .table_list {
+        border: 1px solid rgb(226, 226, 226);
+        padding: 20px 40px;
+        border-radius: 10px;
+        .table_heading {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #c7c7c7;
+            .title {}
+            .btn {
+                &:hover {
+                    background-color: #07122f;
+                    color: white;
+                    font-weight: 500;
+                }
+            }
+        }
+        .data_table {
+            margin-top: 50px;
+            table {
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 0;
+                thead {
+                    background-color: rgba(126, 126, 126, 0.6);
+                    tr {
+                        &:first-child {
+                            th {
+                                &:first-child {
+                                    border-top-left-radius: 5px;
+                                }
+                                &:last-child {
+                                    border-top-right-radius: 5px;
+                                }
+                            }
+                        }
+                        &:last-child {
+                            th {
+                                &:first-child {
+                                    border-top-left-radius: 5px;
+                                }
+                                &:last-child {
+                                    border-top-right-radius: 5px;
+                                }
+                            }
+                        }
+                        th {
+                            padding: 10px;
+                            border: 1px solid #808080;
+                            border-right: 0px solid #000;
+                            &:last-child {
+                                border-right: 1px solid #808080;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            padding: 10px;
+                            border: 1px solid #808080;
+                            border-top: 0px solid #000;
+                            border-right: 0px solid #000;
+                            &:last-child {
+                                border-right: 1px solid #808080;
+                            }
+                        }
+                        &:last-child {
+                            td {
+                                &:first-child {
+                                    border-bottom-left-radius: 5px;
+                                }
+                                &:last-child {
+                                    border-bottom-right-radius: 5px;
+                                }
+                            }
+                        }
+                        .edit,
+                        .delete {
+                            text-align: center;
+                            .btn {
+                                color: white;
+                                outline: none;
+                                border: none;
+                            }
+                        }
+                        .edit {
+                            .btn {
+                                background: #6c87d3;
+                            }
+                        }
+                        .delete {
+                            .btn {
+                                background: #d41c3b;
+                            }
+                        }
+                        .thu_img {
+                            img {
+                                width: 70px;
+                                height: 90px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

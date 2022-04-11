@@ -1,0 +1,194 @@
+#feedback .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#feedback .heading h1 {
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+#feedback .heading hr {
+  height: 3px;
+  width: 410px;
+  background: #3b3b3b;
+}
+
+#feedback .heading small {
+  font-weight: 600;
+  font-size: 16px;
+  color: #696969;
+}
+
+#feedback .container {
+  max-width: 90%;
+  margin: 0 auto;
+  background: transparent;
+}
+
+#feedback .container .form-wrapper {
+  margin-bottom: 50px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 60px -10px lightgrey;
+          box-shadow: 0px 0px 60px -10px lightgrey;
+  padding: 20px;
+}
+
+#feedback .container .form-wrapper ul {
+  position: relative;
+  text-transform: capitalize;
+}
+
+#feedback .container .form-wrapper ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#feedback .container .form-wrapper ul li label {
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+#feedback .container .form-wrapper ul li .btn {
+  background: #2196F3;
+  width: 95%;
+  color: white;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+#feedback .container .form-wrapper ul li .btn:hover {
+  background: #0187f5;
+}
+
+#feedback .container .form-wrapper ul .reaction {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#feedback .container .form-wrapper ul .reaction label {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#feedback .container .form-wrapper ul .reaction .ch-w {
+  padding: 20px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#feedback .container .form-wrapper ul .reaction .ch-w .ch-b {
+  display: block;
+  margin: 0px 20px;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#feedback .container .form-wrapper ul .reaction .ch-w .ch-b input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#feedback .container .form-wrapper ul .reaction .ch-w .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+#feedback .container .form-wrapper ul .reaction .ch-w .ch-b:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+#feedback .container .form-wrapper ul .reaction .ch-w .ch-b input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+#feedback .container .form-wrapper ul .reaction .ch-w .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+#feedback .container .form-wrapper ul .reaction .ch-w .ch-b input:checked ~ .checkmark:after {
+  display: block;
+}
+
+#feedback .container .form-wrapper ul .reaction .ch-w .ch-b .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+#feedback .container .form-wrapper ul .cover-box {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: black;
+  font-family: serif;
+  font-weight: 1000;
+}
+
+#feedback .container .form-wrapper ul .cover-box input {
+  width: 90%;
+  height: 40px;
+  border: 2px solid #a3a2a2;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+  padding-left: 20px;
+  text-transform: capitalize;
+  color: black;
+}
+
+#feedback .container .form-wrapper ul .msg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#feedback .container .form-wrapper ul .msg textarea {
+  width: 95%;
+  padding: 10px 10px 0px 10px;
+  border: 2px solid #a3a2a2;
+  font-size: 16px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=feedback.css.map */

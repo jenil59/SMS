@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #07122f;
+}
+
+header .heading {
+  font-size: 30px;
+  margin: 10px;
+  margin-left: 40px;
+  width: 17%;
+  letter-spacing: 1px;
+}
+
+header .heading a {
+  color: #fff;
+}
+
+header .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .nav li {
+  font-size: 18px;
+  letter-spacing: 1px;
+  list-style: none;
+  margin-right: 50px;
+}
+
+header .exit {
+  position: absolute;
+  right: 20px;
+}
+
+header .exit a {
+  color: #808080;
+  border-color: #808080;
+  font-weight: 200;
+}
+
+header .exit a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.container {
+  padding: 10px;
+  width: 100%;
+}
+
+.container .card_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+.container .card_container .card {
+  border-radius: 10px;
+  height: 200px;
+  width: 25%;
+  border: 1px solid #bfbfbf;
+  cursor: pointer;
+}
+
+.container .card_container .card:hover {
+  -webkit-box-shadow: 0.5px 0.5px 10px 1px #cccccc;
+          box-shadow: 0.5px 0.5px 10px 1px #cccccc;
+}
+
+.container .card_container .text {
+  font-size: 30px;
+  margin: 20px;
+}
+
+.container .card_container .number {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100px;
+  text-align: center;
+}
+
+.container .card_container .status {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 50px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.container .table_list {
+  border: 1px solid #e2e2e2;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.container .table_list .table_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.container .table_list .table_heading .btn:hover {
+  background-color: #07122f;
+  color: white;
+  font-weight: 500;
+}
+
+.container .table_list .data_table {
+  margin-top: 50px;
+}
+
+.container .table_list .data_table table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.container .table_list .data_table table thead {
+  background-color: rgba(126, 126, 126, 0.6);
+}
+
+.container .table_list .data_table table thead tr:first-child th:first-child {
+  border-top-left-radius: 5px;
+}
+
+.container .table_list .data_table table thead tr:first-child th:last-child {
+  border-top-right-radius: 5px;
+}
+
+.container .table_list .data_table table thead tr:last-child th:first-child {
+  border-top-left-radius: 5px;
+}
+
+.container .table_list .data_table table thead tr:last-child th:last-child {
+  border-top-right-radius: 5px;
+}
+
+.container .table_list .data_table table thead tr th {
+  padding: 10px;
+  border: 1px solid #808080;
+  border-right: 0px solid #000;
+}
+
+.container .table_list .data_table table thead tr th:last-child {
+  border-right: 1px solid #808080;
+}
+
+.container .table_list .data_table table tbody tr td {
+  padding: 10px;
+  border: 1px solid #808080;
+  border-top: 0px solid #000;
+  border-right: 0px solid #000;
+}
+
+.container .table_list .data_table table tbody tr td:last-child {
+  border-right: 1px solid #808080;
+}
+
+.container .table_list .data_table table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+.container .table_list .data_table table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+.container .table_list .data_table table tbody tr .edit,
+.container .table_list .data_table table tbody tr .delete {
+  text-align: center;
+}
+
+.container .table_list .data_table table tbody tr .edit .btn,
+.container .table_list .data_table table tbody tr .delete .btn {
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.container .table_list .data_table table tbody tr .edit .btn {
+  background: #6c87d3;
+}
+
+.container .table_list .data_table table tbody tr .delete .btn {
+  background: #d41c3b;
+}
+
+.container .table_list .data_table table tbody tr .thu_img img {
+  width: 70px;
+  height: 90px;
+}
+/*# sourceMappingURL=index.css.map */

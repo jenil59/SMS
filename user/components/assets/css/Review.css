@@ -1,0 +1,266 @@
+#Reviews_section {
+  padding: 20px;
+}
+
+#Reviews_section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#Reviews_section .container .first {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  border: 1px solid #eef;
+  margin: 5px;
+}
+
+#Reviews_section .container .first .wrapper {
+  padding: 20px 10px;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  border-right: 1px solid lightgray;
+  border-radius: 5px;
+  padding-right: 20px;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .left .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .left .upper .rates {
+  font-size: 35px;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .left .upper .star {
+  font-size: 30px;
+  padding-left: 6px;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .left .lower {
+  padding-left: 8px;
+  color: grey;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .right {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .right .ratebox {
+  width: 5rem;
+  margin: 4px;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .right .ratebox .progress {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .right .ratebox .progress svg {
+  width: 6rem;
+  height: 6rem;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .right .ratebox .progress svg circle {
+  fill: none;
+  stroke: green;
+  stroke-width: 7;
+  stroke-linecap: round;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+  stroke-dasharray: 0;
+  stroke-dashoffset: 92;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .right .ratebox .progress svg .c1 {
+  stroke-dasharray: 252;
+  stroke-dashoffset: 92;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .right .ratebox .progress svg .c2 {
+  stroke-dasharray: 213;
+  stroke-dashoffset: 92;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .right .ratebox .progress svg .c3 {
+  stroke-dasharray: 225;
+  stroke-dashoffset: 92;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .right .ratebox .progress svg .c4 {
+  stroke-dasharray: 233;
+  stroke-dashoffset: 92;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .right .ratebox .progress .number {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Reviews_section .container .first .wrapper .alloverreviewbox .ratings .right .ratebox .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#Reviews_section .container .second {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  width: 50%;
+}
+
+#Reviews_section .container .second .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#Reviews_section .container .second .container .sec_heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#Reviews_section .container .second .container .review_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+#Reviews_section .container .second .container .review_container .review_box {
+  height: 270px;
+  padding: 10px;
+  margin: 10px 0px;
+  border: 1px solid #eef;
+  border-radius: 5px;
+}
+
+#Reviews_section .container .second .container .review_container .review_box .outer {
+  padding: 5px;
+}
+
+#Reviews_section .container .second .container .review_container .review_box .outer .upper .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#Reviews_section .container .second .container .review_container .review_box .outer .upper .top .star_box {
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+
+#Reviews_section .container .second .container .review_container .review_box .outer .upper .top .review_title {
+  margin-left: 10px;
+}
+
+#Reviews_section .container .second .container .review_container .review_box .outer .upper .bottom {
+  font-size: 12px;
+}
+
+#Reviews_section .container .second .container .review_container .review_box .outer .middle {
+  padding-top: 10px;
+  border-bottom: 1px solid #eef;
+}
+
+#Reviews_section .container .second .container .review_container .review_box .outer .middle .gallary {
+  width: 100%;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#Reviews_section .container .second .container .review_container .review_box .outer .middle .gallary .imgbox {
+  border: 1px solid #efe;
+  margin: 2px;
+  width: 70px;
+  height: 70px;
+}
+
+#Reviews_section .container .second .container .review_container .review_box .outer .middle .gallary .imgbox img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+#Reviews_section .container .second .container .review_container .review_box .outer .lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+#Reviews_section .container .second .container .review_container .review_box .outer .lower .like_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+}
+
+#Reviews_section .container .second .container .review_container .review_box .outer .lower .like_box .like_count {
+  margin-left: 15px;
+}
+/*# sourceMappingURL=Review.css.map */
