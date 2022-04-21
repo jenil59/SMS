@@ -187,13 +187,13 @@
                                         }
                                     }
                                 }
+                                .openbox {
+                                    display: block;
+                                }
                                 &:hover {
                                     cursor: pointer;
                                     border: 1px solid #a8a8a8;
                                     color: whitesmoke;
-                                    .second {
-                                        display: block;
-                                    }
                                 }
                             }
                             #location-box {

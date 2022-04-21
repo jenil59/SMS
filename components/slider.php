@@ -15,9 +15,11 @@
                                     ?>
                                     
                                     <div class="product">
+                                    <a href="<?php echo "./product.php?prd={$r_data['id']}"; ?>">
                                                 <picture>
-                                                    <img src="<?php echo "./upload/".$r_data['img']; ?>" alt="">
+                                                   <img src="<?php echo "./upload/".$r_data['img']; ?>" alt="">
                                                 </picture>
+                                            </a>
                                                 <div class="details">
                                                     <p>
                                                         <a href="<?php echo "./product.php?prd={$r_data['id']}"; ?>"><?php echo substr($r_data['b_name'],0,40)."..."; ?></a><br>

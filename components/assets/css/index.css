@@ -271,14 +271,14 @@ body header .logo-bar .logo-right .wrapper #user-box .second .item:first-child {
   color: black;
 }
 
+body header .logo-bar .logo-right .wrapper #user-box .openbox {
+  display: block;
+}
+
 body header .logo-bar .logo-right .wrapper #user-box:hover {
   cursor: pointer;
   border: 1px solid #a8a8a8;
   color: whitesmoke;
-}
-
-body header .logo-bar .logo-right .wrapper #user-box:hover .second {
-  display: block;
 }
 
 body header .logo-bar .logo-right .wrapper #location-box {
