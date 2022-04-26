@@ -93,7 +93,7 @@ if(isset($_POST['submit_final']) or isset($_POST['submit_update']) or isset($_PO
       $desc=mysqli_real_escape_string($conn,$_POST['description']);
 
         
-      $sql_up="UPDATE `products` SET 
+      $sql_up="UPDATE `books` SET 
       `b_name`='{$bname}',
       `author_name`='{$auname}',
       `publisher`='{$publisher}',
@@ -128,7 +128,7 @@ if(isset($_POST['submit_final']) or isset($_POST['submit_update']) or isset($_PO
 
   <?php
     if(isset($_POST['submit_update'])){
-      $sql="SELECT `b_name`, `author_name`, `publisher`, `language`, `prize`, `mrp`, `isbn`, `nofpages`, `quantity`, `description`, `img` FROM `products` where id={$id}"; 
+      $sql="SELECT `b_name`, `author_name`, `publisher`, `language`, `prize`, `mrp`, `isbn`, `nofpages`, `quantity`, `description`, `img` FROM `books` where id={$id}"; 
         if($result=mysqli_query($conn,$sql) or die("query error ! try again !"))
         {
           $or_data=mysqli_fetch_assoc($result);

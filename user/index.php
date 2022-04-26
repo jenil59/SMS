@@ -27,11 +27,7 @@ if(isset($_SESSION['login-username']))
             <div class="overlay">
                 <h1>Study Material Store</h1>
                 <p></p>
-                <span>
-			<p>login with social media</p>
-			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
-		</span>
+               
             </div>
         </div>
 
@@ -61,6 +57,24 @@ if(isset($_SESSION['login-username']))
 
     </div>
     <!-- partial -->
+    <script>
+        <?php
+
+            if(isset($_GET['status']))
+            {
+                if($_GET['status']==0)
+                {
+                      ?>
+                      alert("Invalid Username Or Password. Try again");
+                      window.location="./";
+                      <?php
+                }
+            }
+        
+        ?>
+
+    </script>
+    
 
 </body>
 

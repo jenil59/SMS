@@ -12,11 +12,7 @@ else{
     include './config.php';
 }
 
-//   echo "<pre>";
-//   print_r(count(explode('&',$_SERVER['QUERY_STRING'])));
-//   print_r($_SERVER);
-//   print_r(empty($_SERVER['QUERY_STRING']));
-//   echo "</pre>";
+
 
 ?>
 
@@ -45,10 +41,15 @@ else{
                 <div class="containt">
                     <div id="side_bar">
                         <div class="side_menu">
-                            <div  class="filter_head"><h3> FILTER</h3></div>
-                            <div  class="filter1"><span>PRIME & DELIVERY</span><i class="fa fa-angle-down"></i></div>
-                            <div  class="filter1"><span>CATEGORIES</span><i class="fa fa-angle-down"></i></div>
-                            <div  class="filter1"><span>BRANDS</span><i class="fa fa-angle-down"></i></div> 
+                            <div  class="filter_head">
+                                <h3> FILTER</h3>
+                            </div>
+                            <div  class="filter1">
+                                <span>PRIME & DELIVERY</span>
+                            </div> 
+                            <div class="filters"><i class="fa fa-angle-down"></i></div>
+                            <div class="filter1"><span>CATEGORIES</span><i class="fa fa-angle-down"></i></div>
+                            <div class="filter1"><span>BRANDS</span><i class="fa fa-angle-down"></i></div> 
                         </div>    
                     </div>
                     <div class="product_list">
@@ -61,11 +62,11 @@ else{
                            {
                                $sq=mysqli_real_escape_string($conn,$_GET['search-query']);
 
-                               $sql="SELECT id,b_name,author_name,publisher,prize,mrp,img FROM products where b_name like '%{$sq}%'";
+                               $sql="SELECT id,b_name,author_name,publisher,prize,mrp,img FROM books where b_name like '%{$sq}%'";
                            }
                            else{
                                if(empty($_SERVER['QUERY_STRING'])==1){
-                                $sql="SELECT id,b_name,author_name,publisher,prize,mrp,img FROM products ";
+                                $sql="SELECT id,b_name,author_name,publisher,prize,mrp,img FROM books ";
                                }
                                else{
                                    header("Location: ./");

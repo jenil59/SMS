@@ -81,7 +81,7 @@ include './user/config.php';
               
                 <section id="collection_products">
                      <?php
-                      $r_sql="SELECT id,b_name,author_name,publisher,prize,mrp,img FROM products ORDER BY id DESC limit 15";
+                      $r_sql="SELECT id,b_name,author_name,publisher,prize,mrp,img FROM books ORDER BY id DESC limit 15";
                      include './components/slider.php';
                 
                 ?>

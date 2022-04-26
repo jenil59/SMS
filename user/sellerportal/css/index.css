@@ -149,6 +149,19 @@ header .exit a:hover {
   border-bottom: 1px solid #c7c7c7;
 }
 
+.container .table_list .table_heading .list .catlist .catlistitem {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.container .table_list .table_heading .list .catlist .catlistitem a {
+  color: #000;
+}
+
+.container .table_list .table_heading .list .catlist .catlistitem a:hover {
+  text-decoration: underline;
+}
+
 .container .table_list .table_heading .btn:hover {
   background-color: #07122f;
   color: white;

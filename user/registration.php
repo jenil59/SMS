@@ -58,11 +58,7 @@ else
             <div class="overlay">
                 <h1>Study Material Store</h1>
                 <p></p>
-                <span>
-			<p>login with social media</p>
-			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-		</span>
+               
             </div>
         </div>
 

@@ -1,0 +1,18 @@
+#selcat {
+    padding: 60px;
+    .title {
+        font-size: 26px;
+        font-weight: bold;
+        color: #444141;
+        margin-bottom: 30px;
+    }
+    form {
+        select {
+            width: 100%;
+            height: 40px;
+            padding-left: 20px;
+            padding-right: 23px;
+            font-size: 20px;
+        }
+    }
+}

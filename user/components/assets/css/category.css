@@ -70,6 +70,12 @@
           transition-delay: 70ms;
 }
 
+#main_category .containt #side_bar .filter1 .filters {
+  background-color: #363636;
+  height: 10px;
+  width: 10px;
+}
+
 #main_category .containt #side_bar .filter1 i {
   margin-right: 9px;
 }

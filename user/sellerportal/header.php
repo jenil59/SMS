@@ -3,10 +3,10 @@
 <header>
         <div class="nav">
             
-            <div class="heading"><a href="#">Seller Portal</a></div>
+            <div class="heading"><a href="./">Seller Portal</a></div>
             <div class="nav_list">
                 <ul>
-                    <li><a href="#">Manage Product</a></li>
+                    <li><a href="./">Manage Product</a></li>
                     <li><a href="#">Order</a></li>
                     <li><a href="#">Settings</a></li>
                 </ul>

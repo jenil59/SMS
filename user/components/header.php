@@ -32,7 +32,7 @@
                                 <span>wishlist</span>
 
                             </div>
-                            <div id="user-box"  onclick="openbox(this)">
+                            <div id="user-box"  onclick="openbox(this);">
                                 <div class="first">
                                     <div class="icon-box">
                                         <img src="./components/assets/images/user/uimg.png" alt="" srcset="">

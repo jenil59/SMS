@@ -1,4 +1,4 @@
-<section class="collection-box">
+                                <section class="collection-box">
                                     <div class="collection-heading">
                                         <h1>top hottest products</h1>
                                         <p class="card-btn">

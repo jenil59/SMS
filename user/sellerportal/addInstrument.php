@@ -12,9 +12,7 @@ $un=$_SESSION['login-username'];
 
 if(isset($_POST['submit'])){
     include './config.php';
-    $file_name="";
-    
-    
+    $file_name="";    
         if(isset($_FILES["fileToUpload"]))
         {
             $errors=array();
@@ -50,8 +48,9 @@ if(isset($_POST['submit'])){
                 $first=explode(".",$file_name)['0'];
                 $sec=explode(".",$file_name)['1'];
                 $new_add=str_split(sha1($un),5)[0];
+                $first=substr($first,0,10);
                 $new_file_name=$first.'_'.$new_add.'.'.$sec;
-                $path_file="../../upload/".$new_file_name;
+                $path_file="../../upload/instruments/".$new_file_name;
 
             
             }
@@ -66,17 +65,16 @@ if(isset($_POST['submit'])){
     
     
     
-    $bname=mysqli_real_escape_string($conn,$_POST['bname']);
-    $auname=mysqli_real_escape_string($conn,$_POST['auname']);
-    $lng=mysqli_real_escape_string($conn,$_POST['language']);
-    $publisher=mysqli_real_escape_string($conn,$_POST['publisher']);
-    $prize=mysqli_real_escape_string($conn,$_POST['prize']);
+    $name=mysqli_real_escape_string($conn,$_POST['Iname']);
+    $cname=mysqli_real_escape_string($conn,$_POST['Cname']);
+    $mtrl=mysqli_real_escape_string($conn,$_POST['Material']);
+    $price=mysqli_real_escape_string($conn,$_POST['price']);
     $mrp=mysqli_real_escape_string($conn,$_POST['mrp']);
-    $isbn=mysqli_real_escape_string($conn,$_POST['isbn']);
-    $nop=mysqli_real_escape_string($conn,$_POST['nop']);
-    $qut=mysqli_real_escape_string($conn,$_POST['qut']);
-    $kword=mysqli_real_escape_string($conn,$_POST['kword']);
-    $desc=mysqli_real_escape_string($conn,$_POST['description']);
+    $weight=mysqli_real_escape_string($conn,$_POST['Weight']);
+    $condition=mysqli_real_escape_string($conn,$_POST['Condition']);
+    $color=mysqli_real_escape_string($conn,$_POST['clr']);
+    $quantity=mysqli_real_escape_string($conn,$_POST['qnty']);
+    $desc=mysqli_real_escape_string($conn,$_POST['desc']);
 
     $date=date("d/m/y");
 
@@ -89,33 +87,29 @@ if(isset($_POST['submit'])){
     
     // echo $_FILES["fileToUpload"];
 
-    $sql="INSERT INTO `books` (`b_name`, `author_name`, `publisher`, `language`, `prize`, `mrp`, `isbn`, `nofpages`, `quantity`, `description`, `img`,`reg_date`,`userid`) 
-          VALUES 
-          (
-              '{$bname}',
-              '{$auname}', 
-              '{$publisher}', 
-              '{$lng}', 
-              '{$prize}', 
-              '{$mrp}', 
-              '{$isbn}', 
-              '{$nop}', 
-              '{$qut}', 
-              '{$desc}',
-              '{$new_file_name}',
-              '{$date}',
-              {$uid}
-
-          )";
+    $sql="INSERT INTO `instruments` 
+    ( 
+        `ins_name`, 
+        `ins_companyName`, 
+        `ins_material`, 
+        `ins_weight`, 
+        `ins_condition`, 
+        `ins_price`, 
+        `ins_mrp`, 
+        `ins_color`, 
+        `quanity`, 
+        `image`,
+        `description`
+        ) 
+        VALUES ('$name', '$cname', '$mtrl', $weight, '$condition', $price, $mrp, '$color', $quantity, '$new_file_name','$desc')
+    ";
 
     //   echo $sql;
     if(empty($errors)==true){
      if(mysqli_query($conn,$sql) or die("query error ! \"try again .\""))
      {
-        
-        move_uploaded_file($file_tmp,$path_file);
-            
-        header("Location: ./addBook.php?status=1");
+        move_uploaded_file($file_tmp,$path_file); 
+        header("Location: ./addProduct.php?status=1&item=instrument");
      }
     }
     else{
@@ -128,6 +122,7 @@ if(isset($_POST['submit'])){
 }
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -149,58 +144,56 @@ if(isset($_POST['submit'])){
             <?php include './header.php' ?>
             <section id="addform">
                 <div class="container">
-                    <div class="title">Enter Book Details</div>
+                    <div class="title">Enter Instrument Details</div>
                     <div class="content">
                     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" enctype="multipart/form-data" method="post">
                         <div class="user-details">
                             <div class="input-box">
-                                <span class="details">Book Title & Edition</span>
-                                <input type="text" name="bname" placeholder="Title And Edition Numbers" required>
+                                <span class="details">Instrument Name</span>
+                                <input type="text" name="Iname" placeholder="Enter Instrument Name" required>
                             </div>
                             <div class="input-box">
-                                <span class="details">Author And Contributors</span>
-                                <input type="text" name="auname" placeholder="Add Author and contributors" required>
+                                <span class="details">Instrument Compney Name</span>
+                                <input type="text" name="Cname" placeholder="Enter Compney Name" required>
                             </div>
                             <div class="input-box">
-                                <span class="details">Language</span>
-                                <input type="text" name="language" placeholder="Language of content" required>
+                                <span class="details">Material</span>
+                                <input type="text" name="Material" placeholder="Enter About Product Material " required>
                             </div>
                             <div class="input-box">
-                                <span class="details">Publisher</span>
-                                <input type="text" name="publisher" placeholder="Give Book Publisher Name" required>
+                                <span class="details">Weight</span>
+                                <input type="number" name="Weight" placeholder="Enter Product Weight" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Condition</span>
+                                <input type="text" name="Condition" placeholder="Enter Product Condition" required>
                             </div>
                             <div class="input-box">
                                 <span class="details">prize</span>
-                                <input type="number" name="prize" placeholder="Give Prize" required>
+                                <input type="number" name="price" placeholder="Give Prize" required>
                             </div>
                             <div class="input-box">
                                 <span class="details">MRP</span>
                                 <input type="number" name="mrp" placeholder="Give Maximum Retail Prize" required>
                             </div>
                             <div class="input-box">
-                                <span class="details">ISBN</span>
-                                <input type="number" name="isbn" placeholder="ISBN number" required>
+                                <span class="details">Color</span>
+                                <input type="text" name="clr" placeholder="Enter Product Color" required>
                             </div>
                             <div class="input-box">
-                                <span class="details">No Of Pages</span>
-                                <input type="text" name="nop" placeholder="Give a Page Count" required>
-                            </div>
-                            <div class="input-box" style="width: 300px;">
                                 <span class="details">Image</span>
                                 <input style =" padding: 8px"type="file" name="fileToUpload" accept=".jpg,.jpeg,.png,"  required>
                             </div>
                             <div class="input-box">
                                 <span class="details">Quantity</span>
-                                <input type="number" name="qut" placeholder="Give Book Count" required>
+                                <input type="number" name="qnty" placeholder="Enter Product Quantity" required>
                             </div>
-                            <div class="input-box" style="width: 1000px;">
-                                <span class="details">Keywords</span>
-                                <input type="text" placeholder="Add Keywords" name="kword" required>
-                            </div>
-                            <div class="input-box" style="width: 1000px; margin-bottom: 0;">
+                            <div class="input-box">
                                 <span class="details">Description</span>
-                                <textarea placeholder="Write About Book." rows="4" name="description" cols="76" required></textarea>
+                                <textarea  name="desc" placeholder="Enter Product Quantity" required></textarea>
                             </div>
+                            
+                           
                         </div>                   
                         <div class="button">
                             <input type="submit" name="submit" value="SUBMIT">
@@ -213,35 +206,6 @@ if(isset($_POST['submit'])){
         </div>
     </div>
 
-    <script>
-
-         <?php 
-
-            if(isset($_GET['status']))
-            {
-                if($_GET['status']==1)
-                {
-                    ?>
-                    alert("Book added succesfully");
-                    window.location='./'
-                    <?php
-                }
-                if($_GET['status']==0)
-                {
-                    ?>
-                    alert("Book is not  added succesfully");
-                    window.location='./addBook.php'
-                    <?php
-                }
-
-
-            }
-
-         ?>
-
-    </script>
-
-    <script src="./js/navbar.js"></script>
-
+   
 </body>
 </html>

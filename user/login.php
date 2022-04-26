@@ -19,7 +19,7 @@ session_start();
     }
     else
     {
-        echo "Username or password is incorrect";
+        header("Location:./index.php?status=0");
     }
 
     
